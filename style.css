@@ -1,0 +1,492 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.header {
+    background-color: #dbf2f2;
+    padding: 40px 0 0;
+}
+
+.text1 {
+    font-family: 'Sacramento';
+    font-size: 5em;
+    color: #66BFBF;
+    letter-spacing: 0.02em;
+    margin: 140px 0 0;
+    line-height: 1;
+}
+
+.text2 {
+    font-family: 'Montserrat';
+    color: #66BFBF;
+    font-weight: 700;
+    /* margin: 0 0 120px 0; */
+    font-size: 1.5em;
+}
+
+.text2animation {
+    display: inline-block;
+    width: 0px;
+    height: 27px;
+    animation: textanimation infinite 1.5s;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes textanimation {
+    0% {
+        width: 15px;
+        height: 32px;
+    }
+    55% {
+        width: 95px;
+        height: 32px;
+    }
+    100% {
+        width: 197px;
+        height: 32px;
+        /* margin: auto; */
+    }
+}
+
+.cloud1 {
+    width: 169px;
+    position: absolute;
+    top: 146px;
+    right: 310px;
+    animation: animateone forwards ease-in 1s;
+}
+
+@keyframes animateone {
+    0% {
+        right: 150px;
+    }
+    100% {
+        right: 310px;
+    }
+}
+
+.cloud2 {
+    width: 169px;
+    position: absolute;
+    top: 285px;
+    left: 310px;
+    transform: rotateY(179deg);
+    animation: animatetwo forwards ease-in 1s;
+}
+
+@keyframes animatetwo {
+    0% {
+        left: 150px;
+    }
+    100% {
+        left: 310px;
+    }
+}
+
+.land {
+    margin-bottom: -1px;
+    margin-top: 120px;
+}
+
+.about {
+    /* background-color: #e0f0f0; */
+    padding: 100px 0;
+    position: relative;
+    /* opacity: 0; */
+}
+
+
+/* .info:hover {
+    opacity: 1;
+} */
+
+
+/* :hover.fade-bottom {
+    animation: fade-bottom ease-in 1s;
+} */
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(350px);
+        overflow: hidden;
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        overflow: hidden;
+        opacity: 1;
+    }
+}
+
+.bitmoji {
+    width: 220px;
+    animation: animateimg ease-in-out 2s infinite alternate;
+    margin-bottom: 40px;
+}
+
+.bitmoji:hover {
+    animation-play-state: paused;
+}
+
+@keyframes animateimg {
+    from {
+        box-shadow: 0px 0px 20px 2px #819a9417;
+        border-radius: 50%;
+    }
+    to {
+        box-shadow: 0px 0px 20px 2px #819a9482;
+        border-radius: 50%;
+    }
+}
+
+li {
+    list-style: none;
+    display: inline;
+    right: 150px;
+}
+
+ul {
+    position: absolute;
+    right: 150px;
+}
+
+li a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #66BFBF;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.text3 {
+    color: #787878;
+    font-size: 1.2em;
+    width: 550px;
+    margin: auto;
+    line-height: 1.65em;
+}
+
+hr {
+    border-top: 5px solid #787878 !important;
+    margin: 80px auto 0 !important;
+    width: 50px !important;
+    border-style: dotted !important;
+}
+
+.text4 {
+    font-family: 'Montserrat';
+    color: #66BFBF;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.skills {
+    position: relative;
+    width: 780px;
+    margin: 35px auto 0;
+    text-align: initial;
+}
+
+.skillimg {
+    width: 185px;
+    height: 165px;
+    margin: 0 20px 0 0px;
+    border-radius: 50%;
+}
+
+.skillimg2 {
+    width: 185px;
+    height: 165px;
+    margin: 0 20px;
+    border-radius: 50%;
+}
+
+.text5 {
+    font-family: 'Montserrat';
+    color: #66BFBF;
+    font-weight: 700;
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.text {
+    width: 550px;
+    text-align: left;
+    display: inline;
+    float: right;
+}
+
+.textt2 {
+    width: 550px;
+    text-align: left;
+    display: inline;
+    float: left;
+}
+
+.info {
+    margin-bottom: 80px;
+}
+
+.contactus {
+    padding: 100px 0;
+}
+
+.skillset {
+    background-color: #dbf2f2;
+    padding: 80px 0;
+    margin-top: 80px;
+}
+
+button {
+    background-color: #66BFBF;
+    border: 0;
+    margin: 25px 0px !important;
+    height: 50px;
+    width: 135px;
+}
+
+button a {
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #95eded;
+}
+
+.footer {
+    background-color: #66BFBF;
+    padding: 40px 0;
+}
+
+.socialicons {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+}
+
+.socialicons a {
+    color: #11999E;
+}
+
+.socialicons:hover a {
+    background-color: transparent;
+    color: #000;
+}
+
+.socialicons:hover {
+    background-color: transparent;
+}
+
+::selection {
+    background-color: transparent;
+    color: #000;
+}
+
+.text6 {
+    color: #eaf6f6;
+    font-size: 1em;
+}
+
+.text6 a {
+    text-decoration: none;
+}
+
+.text6 a:hover {
+    color: #000;
+}
+
+.backtotop {
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    transform: scaleX(2.8) rotate(270deg);
+}
+
+.backtotop a {
+    text-decoration: none;
+}
+
+.backtotop a:hover {
+    color: #11999E;
+}
+
+@media screen and (max-width: 1100px) {
+    .cloud1 {
+        width: 169px;
+        position: absolute;
+        top: 160px;
+        right: 110px;
+        animation: animateone forwards ease-in 1s;
+    }
+    @keyframes animateone {
+        0% {
+            right: 20px;
+        }
+        100% {
+            right: 110px;
+        }
+    }
+    .cloud2 {
+        width: 169px;
+        position: absolute;
+        top: 300px;
+        left: 110px;
+        transform: rotateY(179deg);
+        animation: animatetwo forwards ease-in 1s;
+    }
+    @keyframes animatetwo {
+        0% {
+            left: 20px;
+        }
+        100% {
+            left: 110px;
+        }
+    }
+    .land {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .cloud1 {
+        width: 169px;
+        position: absolute;
+        top: 160px;
+        right: 110px;
+        animation: animateone forwards ease-in 1s;
+    }
+    @keyframes animateone {
+        0% {
+            right: 20px;
+        }
+        100% {
+            right: 110px;
+        }
+    }
+    .cloud2 {
+        width: 169px;
+        position: absolute;
+        top: 300px;
+        left: 110px;
+        transform: rotateY(179deg);
+        animation: animatetwo forwards ease-in 1s;
+    }
+    @keyframes animatetwo {
+        0% {
+            left: 20px;
+        }
+        100% {
+            left: 110px;
+        }
+    }
+    .land {
+        width: 100vw;
+    }
+    ul {
+        width: 100vw;
+        left: auto;
+        right: auto;
+        padding-inline-start: 0;
+    }
+    .skills {
+        display: inline-block;
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .skillimg {
+        width: 185px;
+        height: 165px;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .skillimg2 {
+        width: 185px;
+        height: 165px;
+        margin: 60px auto 0;
+        border-radius: 50%;
+    }
+    .text5 {
+        font-family: 'Montserrat';
+        color: #66BFBF;
+        font-weight: 700;
+        font-size: 1.5em;
+        display: block;
+        margin: 40px auto 0;
+    }
+    .text {
+        width: auto;
+        text-align: center;
+        display: block;
+    }
+    .textt2 {
+        width: auto;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cloud1 {
+        width: 169px;
+        position: absolute;
+        top: 146px;
+        right: 50px;
+        animation: none;
+    }
+    .cloud2 {
+        width: 169px;
+        position: absolute;
+        top: 325px;
+        left: 50px;
+        transform: rotateY(179deg);
+        animation: none;
+    }
+    ul {
+        width: 100vw;
+        left: auto;
+        right: auto;
+        padding-inline-start: 0;
+    }
+    .land {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .text3 {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .text3 {
+        width: 80vw;
+    }
+    .bitmoji {
+        width: 160px;
+    }
+    .text1 {
+        font-size: 4em;
+    }
+    ul {
+        width: 100vw;
+        left: auto;
+        right: auto;
+        padding-inline-start: 0;
+    }
+    .cloud1 {
+        top: 124px;
+    }
+}

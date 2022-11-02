@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>My Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+    <div class="header" id="home">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="cloud.png" alt="" class="cloud1"><br>
+        <h1 class="text1">I'm muskan</h1>
+        <h2 class="text2 text2animation">a web designer.</h2>
+        <img src="cloud.png" alt="" class="cloud2"><br>
+        <img src="land.png" alt="" class="land">
+    </div>
+    <div class="about fade-bottom" id="about">
+        <img src="IMG_1611(1).png" alt="" class="bitmoji">
+        <h2 class="text4">Hello</h2>
+        <p class="text3">I'm a web designer / developer based in Amritsar, Punjab. I have a passion for web design and love to create for web and mobile devices.
+        </p>
+        <hr>
+    </div>
+    <div class="info" id="info">
+        <h2 class="text4">My Skills</h2>
+        <div class="skillset">
+            <div class="skills">
+                <img src="95YRwf6CNw8.jpg" alt="" class="skillimg">
+                <div class="text">
+                    <h3 class="text5">Design what you want</h3><br>
+                    <p class="text3" style="display: inline;">I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.</p>
+                </div>
+            </div>
+            <div class="skills">
+                <img src="67L18R4tW_w.jpg" alt="" class="skillimg2">
+                <div class="textt2">
+                    <h3 class="text5">Develop what you need.</h3><br>
+                    <p class="text3" style="display: inline;">I'm a developer, so I know how to create your website to run across different devices using the latest technologies available.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="contactus" id="contact">
+        <h2 class="text4">Get In Touch</h2>
+        <h3 class="text5">I’m currently available for freelance work.</h3><br>
+        <p class="text3">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p><br>
+        <button><a href="mailto:ms312093@gmail.com">Contact Me</a></button>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <button class="socialicons"><a href="https://linkedin.com/">LinkedIn</a></button>
+            <button class="socialicons"><a href="https://twitter.com/">Twitter</a></button>
+            <button class="socialicons"><a href="">Home</a></button>
+            <br>
+            <p class="text6">© <span id="year">year</span> <a href="">Muskan Singh.</a> All rights reserved.</p>
+        </div>
+        <div class="backtotop">
+            <a href="#home" id="backtotop">></a>
+        </div>
+    </footer>
+
+
+
+    <script>
+        var year = document.getElementById("year");
+        var currentyear = new Date().getFullYear();
+        year.innerHTML = currentyear;
+    </script>
+</body>
+
+</html>
